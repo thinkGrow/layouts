@@ -1,0 +1,38 @@
+.container {
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: center;
+  min-height: 90vh;
+  min-width: 100vh;
+  border-radius: 10px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.body-1 {
+  background-color: #604e0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: xx-large;
+  /* text-align: center; */
+}
+
+.body-2 {
+  /* text-align: center; */
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: xx-large;
+}
+
+@media screen and (max-width: 991px) {
+  // example
+  .mobile {
+    display: block;
+  }
+}
