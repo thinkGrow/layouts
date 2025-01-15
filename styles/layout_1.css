@@ -4,6 +4,8 @@
   grid-template-columns: 1fr 2fr;
   text-align: center;
   min-height: 90vh;
+  /* height: 90vh;
+  width: 100vh; */
   min-width: 100vh;
   border-radius: 10px;
   gap: 20px;
@@ -30,9 +32,10 @@
   font-size: xx-large;
 }
 
-@media screen and (max-width: 991px) {
-  // example
-  .mobile {
-    display: block;
+@media only screen and (max-width: 750px) {
+  .container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: none;
+    min-width: 50vh;
   }
 }
