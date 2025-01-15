@@ -1,0 +1,71 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 95vh;
+  min-width: 70vh;
+  gap: 15px;
+  font-size: 40px;
+  color: white;
+  margin: 10px;
+  margin-top: 20px;
+  /* justify-content: flex-start; */
+}
+
+.first {
+  background-color: red;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.second {
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 15px;
+}
+
+.second_2 {
+  background-color: orange;
+  padding-left: 20px;
+
+  padding-top: 10px;
+}
+
+.second_second {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  gap: 15px;
+}
+
+.second_3 {
+  background-color: purple;
+  padding-left: 20px;
+
+  padding-top: 10px;
+}
+
+.second_4 {
+  background-color: grey;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-columns: none;
+    min-width: 50vh;
+    min-height: 50vh;
+  }
+
+  .second {
+    grid-template-rows: 2fr 2fr 2fr;
+    gap: 15px;
+    min-height: 300%;
+  }
+
+  .second_second {
+    grid-template-columns: none;
+    gap: 15px;
+    min-height: 200%;
+  }
+}
